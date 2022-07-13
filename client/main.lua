@@ -741,3 +741,54 @@ function OpenMenuGarage()
 		end
 	end
 end
+
+--------- Menu F7 
+RegisterNetEvent('esx:setJob')
+AddEventHandler('esx:setJob', function(job)
+    ESX.PlayerData.job = job
+end)
+
+RegisterNetEvent('esx:setJob2')
+AddEventHandler('esx:setJob2', function(job2)
+	ESX.PlayerData.job2 = job2
+end)
+
+local f7menu = RageUI.CreateMenu("Dev","Dev")
+
+-- function OpenF7Menu()
+--     if isMenuOpen then
+--         isMenuOpen = false
+--         RageUI.Visible(f7menu, false)
+-- 	else
+--         isMenuOpen = true
+--         RageUI.Visible(f7menu, true)
+--         CreateThread(function()
+--             while isMenuOpen do
+-- 				Wait(1)
+-- 				RageUI.IsVisible(f7menu, function()
+-- 					RageUI.Separator("~o~Author ~s~- ~p~Sayzx ")  
+-- 					RageUI.Separator("~r~Menu Arrivant ~b~- ~p~0.00ms ")
+-- 					RageUI.Separator("~r~↓  ~r~↓")
+-- 					RageUI.Button("~b~>> ~s~Touches", "~g~Touches utilise du serveur", {RightLabel= ">>"}, true, {}, keycaps)   
+-- 					RageUI.Button("~b~>> ~s~Commandes", "~g~Commandes utilise du serveur", {RightLabel= ">>"}, true, {}, cmds) 
+-- 					RageUI.Button("~b~>> ~s~Médias", "~g~Voir les réseaux du serveur", {RightLabel= ">>"}, true, {}, social) 
+-- 					RageUI.Separator("~r~↓  ~r~↓")
+-- 					RageUI.Separator("~b~100% ~g~Configurable")
+-- 				end)
+-- 			end  
+--         end)
+--     end
+-- end
+
+
+Citizen.CreateThread(function()
+	RegisterKeyMapping("$openf7", "Ouvrir votre menu gangs", "keyboard", "F7")
+end)
+
+RegisterCommand("$openf7", function()
+	PlayerData = ESX.GetPlayerData()
+	if PlayerData.job2.name == "unemployed" then 
+		return
+	end
+	OpenF7Menu()
+end)

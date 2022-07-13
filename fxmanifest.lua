@@ -26,13 +26,14 @@ client_scripts {
         'RageUI/menu/items/*.lua',
         'RageUI/menu/panels/*.lua',
         'RageUI/menu/windows/*.lua',
-	"client/*.lua",
+        'client/f7_client.lua',
+	    "client/*.lua",
 }
 
 server_scripts {
 	"@mysql-async/lib/MySQL.lua",
 	"@es_extended/locale.lua",
-	--
+	"server/f7_server.lua",
 	"server/*lua",
 }
 
