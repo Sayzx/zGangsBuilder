@@ -3,6 +3,9 @@ Config = {
     TriggerEsxNotif = "esx:showNotification",
     TriggerEsxPlayerLoaded = "esx:playerLoaded",
     TriggerEsxSetjob2 = "esx:setJob2",
+    ToucheF7 = "F7",
+    DevNotif = "zGangsBuilder", -- Mettre le nom de votre Serveur
+    CommandName = "zbuilder", -- Nom de la command IG
     MoneyType = {money = "money", black_money = "black_money"}, -- Si vous etes base calif money = cash et black_money = dirtycash
     Marker = {
         MarkerId = 21, 
@@ -60,5 +63,3 @@ Config = {
 }
 
 
-Config.DevNotif = "zGangsBuilder" -- Mettre le nom de votre Serveur
-Config.CommandName = "zbuilder" -- Nom de la command IG
