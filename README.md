@@ -1,7 +1,7 @@
-# zGangsBuilder
-GangsBuilder for FiveM 0.01ms
+# zGangsBuilder REWORK
+GangsBuilder for FiveM 0.01ms 
 
-#Merci de lire attentivement le README sinon le script ne marchera pas 
+#Merci de lire attentivement le README sinon le script ne marchera pas, je tient a dire que je n'est pas entierement crée le script :)
 
 # zGangsBuilder - GangsBuilder
 **# zGangsBuilder** is a **SRIPTS** for FiveM developed on top of [ESX](https://github.com/ESX-Org/es_extended) and RageUI
