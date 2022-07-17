@@ -752,15 +752,3 @@ RegisterNetEvent('esx:setJob2')
 AddEventHandler('esx:setJob2', function(job2)
 	ESX.PlayerData.job2 = job2
 end)
-
-Citizen.CreateThread(function()
-	RegisterKeyMapping("$openf7", "Ouvrir votre menu gangs", "keyboard", Config.ToucheF7)
-end)
-
-RegisterCommand("$openf7", function()
-	PlayerData = ESX.GetPlayerData()
-	if PlayerData.job2.name == "unemployed" then 
-		return
-	end
-	OpenF7Menu()
-end)
